@@ -1,0 +1,28 @@
+network.netty
+│
+├─ basic                 # 基础入门：理解 NIO 与 Netty 的关系，核心概念
+│   ├─ NettyOverview.java          # Netty 介绍，EventLoop、Channel、Pipeline
+│   └─ NioVsNettyDemo.java         # NIO vs Netty 对比示例
+│
+├─ core                  # Netty 核心组件详解
+│   ├─ EventLoopDemo.java           # EventLoop 和 EventLoopGroup 的工作原理
+│   ├─ ChannelDemo.java             # Channel、ChannelHandler、ChannelPipeline 练习
+│   └─ ByteBufDemo.java             # ByteBuf 的使用及内存管理
+│
+├─ server                # 服务端开发
+│   ├─ EchoServer.java               # 简单 Echo Server 示例
+│   ├─ HttpServer.java               # 基于 Netty 的 HTTP 服务端
+│   ├─ WebSocketServer.java          # WebSocket 服务端示例
+│   └─ PipelineServerDemo.java       # 多个 Handler 管道示例
+│
+├─ client                # 客户端开发
+│   ├─ EchoClient.java               # 简单 Echo Client 示例
+│   ├─ HttpClient.java               # HTTP 客户端示例
+│   └─ WebSocketClient.java          # WebSocket 客户端示例
+│
+└─ advanced              # 高级特性
+    ├─ IdleStateHandlerDemo.java      # 心跳检测与连接管理
+    ├─ SSLDemo.java                   # SSL/TLS 加密通信
+    ├─ RpcFrameworkDemo.java          # Netty 实现简单 RPC 框架示例
+    ├─ ChunkedWriteHandlerDemo.java   # 大文件传输处理
+    └─ EmbeddedChannelDemo.java       # EmbeddedChannel 测试 Netty Pipeline
